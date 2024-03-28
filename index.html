@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image OCR</title>
+<style>
+  /* CSS styles */
+  #imagePreview {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+<h2>Upload an Image</h2>
+<input type="file" id="fileInput" accept="image/*">
+<div id="imagePreview"></div>
+<div id="displayArea"></div>
+
+<!-- Include Tesseract.js from a CDN -->
+<script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+<!--qr code scanner-->
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.0.1/build/jsQR.min.js"></script>
+<script src="in.js"></script>
+</body>
+</html>
